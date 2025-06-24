@@ -1,2 +1,3 @@
 <?php
+// Toberemoved later
 phpinfo();
