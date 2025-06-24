@@ -11,7 +11,7 @@
         <strong>laravel/sail Upgraded to support MariaDB</strong> - <a href="https://github.com/laravel/sail">https://github.com/laravel/sail</a>
 	<p>Sail provides a Docker powered local development experience for Laravel that is compatible with macOS, Windows (WSL2), and Linux.</p>
     </li>
-<ol>
+</ol>
 
 ### Original Plugins used in the app
 
