@@ -15,7 +15,6 @@ if (!function_exists('isAffiliate')) {
 
 }
 
-
 if (!function_exists('isUserAffiliate')) {
 
     function isUserAffiliate($userId)
