@@ -1,5 +1,19 @@
-# Readme for worksuite
-### Plugins used in the app
+# Readme for Gabe Worksuite
+
+### Extra Package by Tarida
+
+<ol>
+    <li>
+        <strong>New GrumPHP</strong> - <a href="https://github.com/phpro/grumphp">https://github.com/phpro/grumphp</a>
+	<p>This handy tool will not only improve your codebase, it will also teach your co-workers to write better code following the best practices you've determined as a team.</p>
+    </li>
+    <li>
+        <strong>laravel/sail Upgraded to support MariaDB</strong> - <a href="https://github.com/laravel/sail">https://github.com/laravel/sail</a>
+	<p>Sail provides a Docker powered local development experience for Laravel that is compatible with macOS, Windows (WSL2), and Linux.</p>
+    </li>
+<ol>
+
+### Original Plugins used in the app
 
 <ol>
     <li>
