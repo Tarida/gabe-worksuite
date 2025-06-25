@@ -11,7 +11,7 @@
         Jalankan composer install dan npm run install. 
     </li>
     <li>
-        Buka alamat domain lokal yang disediakan herd untuk menjalankan installasi herd.
+        Buka alamat domain lokal yang disediakan herd untuk menjalankan installasi worksuite.
     </li>
     <li>
         Selanjutnya anda bisa mendepelop modul baru untuk digunakan pada worksuite
