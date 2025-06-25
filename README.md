@@ -5,7 +5,7 @@
         Install Herd <a href="https://herd.laravel.com/windows">https://herd.laravel.com/windows</a>, atur menggunakan nginx, php8, dan mariaDB
     </li>
     <li>
-        Fork repositiory ini ke akun github, lalu clone atu download ke direktory Herd pada komputer anda.
+        Fork repository ini ke akun github, lalu clone atu download ke direktory Herd pada komputer anda.
     </li>
     <li>
         Jalankan composer install dan npm run install. 
