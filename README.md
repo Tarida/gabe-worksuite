@@ -1,5 +1,22 @@
 # Readme for Gabe Worksuite
-
+### Cara Install untuk development windows
+<ol>
+    <li>
+        Install Herd <a href="https://herd.laravel.com/windows">https://herd.laravel.com/windows</a>, atur menggunakan nginx, php8, dan mariaDB
+    </li>
+    <li>
+        Fork repositiory ini ke akun github, lalu clone atu download ke direktory Herd pada komputer anda.
+    </li>
+    <li>
+        Jalankan composer install dan npm run install. 
+    </li>
+    <li>
+        Buka alamat domain lokal yang disediakan herd untuk menjalankan installasi herd.
+    </li>
+    <li>
+        Selanjutnya anda bisa mendepelop modul baru untuk digunakan pada worksuite
+    </li>
+</ol>
 ### Extra Package by Tarida
 
 <ol>
