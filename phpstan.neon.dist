@@ -9,10 +9,10 @@ parameters:
         - app/Console
         - app/Actions
         - app/Events
-        - app/Observers
         - app/Listeners
         - app/View
         - app/Http
+        - app/Observers
 
     # The level 8 is the highest level
     level: 2
