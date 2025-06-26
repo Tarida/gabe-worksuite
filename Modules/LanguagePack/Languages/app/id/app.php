@@ -149,6 +149,8 @@ return [
     'December' => 'Desember',
   ],
   'menu' => [
+    'productlist' => 'Daftar Produk',
+    'billofmaterial' => 'Bill of Material',
     'units' => 'Satuan',
     'prefixSettings' => 'Pengaturan Awalan',
     'parent_id' => 'Induk',

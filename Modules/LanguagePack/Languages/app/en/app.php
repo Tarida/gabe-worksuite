@@ -150,6 +150,8 @@ return array(
         'December' => 'December',
     ),
     'menu' => array(
+        'productlist' => 'Product List',
+        'billofmaterial' => 'Bill of Material',
         'units' => 'Units',
         'prefixSettings' => 'Prefix Settings',
         'parent_id' => 'Parent',

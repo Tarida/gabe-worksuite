@@ -122,11 +122,11 @@ use App\Http\Controllers\NoticeFileController;
 use App\Http\Controllers\InvoicePaymentDetailController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\WeeklyTimesheetController;
+use App\Http\Controllers\BillOfMaterialController;
 
 
 Route::group(['middleware' => ['auth', 'multi-company-select', 'email_verified'], 'prefix' => 'account'], function () {
     Route::post('image/upload', [ImageController::class, 'store'])->name('image.store');
-
 
     Route::get('account-unverified', [DashboardController::class, 'accountUnverified'])->name('account_unverified');
     Route::get('checklist', [DashboardController::class, 'checklist'])->name('checklist');
@@ -323,7 +323,7 @@ Route::group(['middleware' => ['auth', 'multi-company-select', 'email_verified']
             Route::post('import/process', [ProductController::class, 'importProcess'])->name('products.import.process');
         }
     );
-
+    Route::resource('billofmaterial', BillOfMaterialController::class);
     Route::resource('products', ProductController::class);
     Route::resource('productCategory', ProductCategoryController::class);
     Route::get('getProductSubCategories/{id}', [ProductSubCategoryController::class, 'getSubCategories'])->name('get_product_sub_categories');
