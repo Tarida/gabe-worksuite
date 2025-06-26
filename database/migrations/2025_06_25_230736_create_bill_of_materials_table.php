@@ -19,6 +19,10 @@ return new class extends Migration
             $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('name');
             $table->text('description')->nullable();
+            $table->unsignedInteger('added_by')->nullable();
+            $table->foreign('added_by')->references('id')->on('users');
+            $table->unsignedInteger('last_updated_by')->nullable()->index('product_files_last_updated_by_foreign');
+            $table->foreign('last_updated_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

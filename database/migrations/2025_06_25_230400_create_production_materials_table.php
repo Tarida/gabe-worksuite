@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('production_materials', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('companies')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->unsignedInteger('vendor_id')->nullable();
+            $table->foreign('vendor_id')->references('id')->on('purchase_vendors');
+            $table->string('name');
+            $table->string('description')->nullable();
+            $table->unsignedInteger('added_by')->nullable();
+            $table->foreign('added_by')->references('id')->on('users');
+            $table->unsignedInteger('last_updated_by')->nullable()->index('product_files_last_updated_by_foreign');
+            $table->foreign('last_updated_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

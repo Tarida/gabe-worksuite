@@ -24,6 +24,10 @@ return new class extends Migration
             $table->double('volume', 12, 2)->nullable()->default(0);
             $table->double('weight', 12, 2)->nullable()->default(0);
             $table->text('parts_size')->nullable();
+            $table->unsignedInteger('added_by')->nullable();
+            $table->foreign('added_by')->references('id')->on('users');
+            $table->unsignedInteger('last_updated_by')->nullable()->index('product_files_last_updated_by_foreign');
+            $table->foreign('last_updated_by')->references('id')->on('users');
             $table->timestamps();
         });
     }

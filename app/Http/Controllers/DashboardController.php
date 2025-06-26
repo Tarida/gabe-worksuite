@@ -39,6 +39,7 @@ class DashboardController extends AccountBaseController
 
     public function __construct()
     {
+
         parent::__construct();
         $this->pageTitle = 'app.menu.dashboard';
 
@@ -59,6 +60,7 @@ class DashboardController extends AccountBaseController
 
         $this->isCheckScript();
         session()->forget(['qr_clock_in']);
+
         if (in_array('employee', user_roles())) {
 
             $this->viewOverviewDashboard = user()->permission('view_overview_dashboard');

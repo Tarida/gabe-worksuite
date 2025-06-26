@@ -637,7 +637,6 @@ trait EmployeeDashboard
 
         }
 
-
         return view('dashboard.employee.index', $this->data);
     }
 
