@@ -34,7 +34,7 @@ return new class extends Migration
             $table->dropColumn('material');
             $table->dropColumn('color');
             $table->dropColumn('code_alias');
-            $table->dropColumn('clonedFrom');
+            $table->dropColumn('cloned_from');
         });
     }
 };

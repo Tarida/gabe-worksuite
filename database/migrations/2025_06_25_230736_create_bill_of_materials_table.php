@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bill_of_materials', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->unsignedInteger('company_id')->nullable();
             $table->foreign('company_id')->references('id')->on('companies')->cascadeOnDelete()->cascadeOnUpdate();
             $table->unsignedInteger('product_id')->nullable();
