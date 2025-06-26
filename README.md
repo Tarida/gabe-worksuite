@@ -17,7 +17,7 @@
         Selanjutnya anda bisa mendepelop modul baru untuk digunakan pada worksuite
     </li>
 </ol>
-### Extra Package by Tarida
+### Extra Packages by Tarida
 
 <ol>
     <li>
