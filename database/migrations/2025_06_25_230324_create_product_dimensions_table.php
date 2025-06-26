@@ -13,6 +13,17 @@ return new class extends Migration
     {
         Schema::create('product_dimensions', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('companies')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->unsignedInteger('product_id')->nullable();
+            $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->string('name');
+            $table->double('width', 12, 2)->nullable()->default(0);
+            $table->double('depth', 12, 2)->nullable()->default(0);
+            $table->double('height', 12, 2)->nullable()->default(0);
+            $table->double('volume', 12, 2)->nullable()->default(0);
+            $table->double('weight', 12, 2)->nullable()->default(0);
+            $table->text('parts_size')->nullable();
             $table->timestamps();
         });
     }
